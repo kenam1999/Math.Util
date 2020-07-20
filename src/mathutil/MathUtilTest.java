@@ -15,8 +15,9 @@ import org.junit.Test;
  */
 public class MathUtilTest extends TestCase {
 
-    @Test
+    @Test(expected = IllegalAccessException.class)
     public void testfailedCase() {
         assertEquals(computeFactorial(-5), 1);
     }
+
 }
