@@ -5,22 +5,18 @@
  */
 package mathutil;
 
+import junit.framework.TestCase;
 import static nam.util.MathUtil.computeFactorial;
+import org.junit.Test;
 
 /**
  *
  * @author Namng
  */
-public class MathUtil {
+public class MathUtilTest extends TestCase {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("5! = " + computeFactorial(5));
+    @Test
+    public void testfailedCase() {
+        assertEquals(computeFactorial(-5), 1);
     }
-    
-    
-    
 }
